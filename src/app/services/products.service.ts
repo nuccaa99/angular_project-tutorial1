@@ -17,4 +17,15 @@ export class ProductsService {
       responseType: 'json',
     });
   };
+
+  addProduct = (url: string, body: any): Observable<any> => {
+    return this.apiService.post(url, body, {});
+  };
+
+  editProduct = (url: string, body: any): Observable<any> => {
+    return this.apiService.put(url, body, {});
+  };
+  deleteProduct = (url: string): Observable<Products> => {
+    return this.apiService.delete(url, {});
+  };
 }

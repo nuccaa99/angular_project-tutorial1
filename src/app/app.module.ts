@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 import { provideHttpClient } from '@angular/common/http';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, AppRoutingModule, HeaderComponent, FooterComponent],
-  providers: [provideHttpClient()],
+  providers: [provideHttpClient(), provideAnimations()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
