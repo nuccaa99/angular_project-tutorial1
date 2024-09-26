@@ -5,6 +5,15 @@
   padding: 20px 10px;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+
+  &.active {
+    font-weight: 900;
+  }
+}
 
 .logo {
   height: 100%;
